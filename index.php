@@ -18,9 +18,9 @@ if ($dbconnect->connect_error) {
 
 <table border="1" align="center">
 <tr>
-  <td>Reviewer Name</td>
-  <td>Stars</td>
-  <td>Details</td>
+  <td>Código</td>
+  <td>Nome</td>
+  <td>Quantidade</td>
 </tr>
 
 <?php
@@ -33,7 +33,7 @@ while ($row = mysqli_fetch_array($query)) {
    "<tr>
     <td>{$row['codigo']}</td>
     <td>{$row['nome']}</td>
-    <td>{$row['quantidade']}</td>
+    <td>{$row['quantidade_disponivel']}</td>
    </tr>\n";
 
 }
